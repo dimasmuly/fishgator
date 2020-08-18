@@ -24,7 +24,7 @@
 
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item dropdown">
-         PT. KELOLA MINA PADI NUSANTARA
+         PT. <?php echo $this->session->userdata('username'); ?> <!-- KELOLA MINA PADI NUSANTARA -->
       </li>
       <li class="nav-item">
         <!-- <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
