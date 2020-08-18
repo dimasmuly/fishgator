@@ -87,6 +87,7 @@
         <div class="row">
           <!-- Left col -->
           <section class="col-lg-12 connectedSortable">
+              <canvas id="chartph"></canvas>
             <!-- section -->
           </section>
           <!-- /.Left col -->
