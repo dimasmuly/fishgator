@@ -4,7 +4,7 @@
   <div id="pageintro" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <article>
-      <img src="<?php echo base_url()?>assets/frontend/demo/backgrounds/FishGator7.jpg">
+      <img src="">
       <h3 class="heading">FishGator solusi Perikanan Ala Milenial</h3>
       <p>FishGator merupakan platform financial teknologi peer to peer lending yang mengintegrasikan Internet of Things (IoT) yang terintegrasi dengan decesison support system berbasis Artificial Intellegence pada sistem management budidaya perikanan  sehingga berdampak pada potensi hasil panen yang maksimal.
       </p>
@@ -110,7 +110,7 @@
       <br>  
       <li class="one_third">
         <article>
-          <figure><a class="imgover"><img src="<?php echo base_url()?>assets/frontend/demo/backgrounds/FishGator5.jpg" alt=""></a>
+          <figure><a class="imgover"><img src="<?php echo base_url()?>assets/frontend/demo/backgrounds/FishGator5.jpg" align="right" alt=""></a>
           </figure>
         </article>
       </li>
