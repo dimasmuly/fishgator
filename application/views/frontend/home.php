@@ -74,20 +74,20 @@
     <div class="sectiontitle">
       <h6 class="heading">Cara Kerja FishGator Management System</h6>
     </div>
-    <ul id="latest" class="nospace group sd-third">
+    <ul id="latest" class="nospace group sd-third mr-2">
       <li class="one_third first">
         <article>
           <figure><a class="imgover"><img src="<?php echo base_url()?>assets/frontend/demo/backgrounds/FishGator1.png" alt=""></a>
           </figure>
         </article>
       </li>
-      <li class="one_third">
+      <li class="one_third ">
         <article>
           <figure><a class="imgover"><img src="<?php echo base_url()?>assets/frontend/demo/backgrounds/FishGator2.png" alt=""></a>
           </figure>
         </article>
       </li>
-      <li class="one_third">
+      <li class="one_third ">
         <article>
           <figure><a class="imgover"><img src="<?php echo base_url()?>assets/frontend/demo/backgrounds/FishGator3.png" alt=""></a>
           </figure>
