@@ -12,8 +12,10 @@ class Dashboard extends CI_Controller {
 
 	public function index()
 	{
-		$data['last_data'] = $this->M_table->getLastQuery()->row();
 
+		$data['select'] = $this->db->get('tbl_kolam')->result();
+		$data['last_data'] = $this->M_table->getLastQuery()->row();
+		
 		// chart
 		$data['ph'] = $this->chart->getAll()->result();
 		$data['oxigen'] = $this->chart->getAll()->result();
@@ -26,5 +28,9 @@ class Dashboard extends CI_Controller {
 		$this->load->view('templates_backend/sidebar');
 		$this->load->view('backend/dashboard',$data);
 		$this->load->view('templates_backend/footer');
+	}
+	public function view_data()
+	{
+		
 	}
 }

@@ -5,7 +5,18 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Pilih Kolam</h1>
+            <select class="form-control" name="kolam">
+              <option selected disabled>Pilih Kolam</option>
+              <?php foreach ($select as $slt) { ?>
+                <option>
+                  <?php echo $slt->id; ?>
+                </option>  
+
+                <?php
+              }
+                ?>
+            </select>
+            <!-- <h1 class="m-0 text-dark">Pilih Kolam</h1> -->
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -87,7 +98,7 @@
         <div class="row">
           <!-- Left col -->
           <section class="col-lg-12 connectedSortable">
-              <canvas id="chartph"></canvas>
+              <canvas id="chartph" ></canvas>
             <!-- section -->
           </section>
           <!-- /.Left col -->
