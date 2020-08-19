@@ -24,7 +24,7 @@
 
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item dropdown">
-         <?php echo $this->session->userdata('username'); ?> <!-- KELOLA MINA PADI NUSANTARA -->
+        Selamat Datang <?php echo $this->session->userdata('username'); ?> <!-- KELOLA MINA PADI NUSANTARA -->
       </li>
       <li class="nav-item">
         <!-- <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
