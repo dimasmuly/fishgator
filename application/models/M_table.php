@@ -22,4 +22,11 @@ class M_table extends CI_Model
 		$query = $this->db->get()->result_array();
 		return $query;
 	}
+
+	public function getKolom($id)
+	{
+		$hasil = $this->db->query("SELECT * FROM tbl_kolam WHERE id_nama_kolam= '$id'");
+		return $hasil->result();
+	}
+
 }

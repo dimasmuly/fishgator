@@ -77,6 +77,33 @@
 
 <script>
   $(function () {
+
+    $('#kolom').change(function(){
+      var id = $(this).val();
+      $.ajax({
+        url : "<?php echo base_url()?>dashboard/get_kolom",
+        method : "POST",
+        data : {id : id},
+        async : false,
+        dataType : 'json',
+          success : function(data){
+            var html = '';
+            var i;
+            
+            for (i = 0;  i < data.length; i++) {
+              html += '<option>'+data[i].suhu+'</option>';
+              html += '<option>'+data[i].ph+'</option>';
+              html += '<option>'+data[i].turbidity+'</option>';
+              html += '<option>'+data[i].oxigen+'</option>';
+            }
+            $('.suhu').html(html);
+            $('.ph').html(html);
+            $('.turbidity').html(html);
+            $('.oxigen').html(html);
+          }
+      })
+    });
+
    // chartjs
     // PH
     var ctx = document.getElementById('chartph').getContext('2d');

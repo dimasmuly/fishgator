@@ -30,4 +30,11 @@ class Dashboard extends CI_Controller {
 		$this->load->view('backend/dashboard',$data);
 		$this->load->view('templates_backend/footer');
 	}
+
+	public function get_kolom()
+	{
+		$id = $this->input->post('id');
+		$data = $this->M_table->getKolom($id);
+		echo json_encode($data);
+	}
 }

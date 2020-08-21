@@ -4,18 +4,31 @@
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6 d-flex justify-content-center">
-            <select class="form-control " name="kolam">
-              <option selected disabled>Pilih Kolam</option>
-              <?php foreach ($select as $slt) { ?>
-                <option value="<?php echo $slt['id'] ?>">
-                 <?php echo $slt['nama_kolam']; ?>
-                </option>  
-                <?php
-              }
-                ?>
-            </select>
-            <button class="btn btn-primary">Filter</button>
+          <div class="col-sm-6 ">
+              <select class="form-control" name="kolam" id="kolom">
+                <option selected disabled>Pilih Kolam</option>
+                <?php foreach ($select as $slt) { ?>
+                  <option value="<?php echo $slt['id'] ?>">
+                  <?php echo $slt['nama_kolam']; ?>
+                  </option>  
+                  <?php
+                }
+                  ?>
+              </select>
+
+              <br><br>
+                <select name="ph" class="ph">
+                  <option value="0">--pilih--</option>
+                </select>
+                <select name="oxigen" class="oxigen">
+                  <option value="0">--pilih--</option>
+                </select>
+                <select name="turbidity" class="turbidity">
+                  <option value="0">--pilih--</option>
+                </select>
+                <select name="suhu" class="suhu">
+                  <option value="0">--pilih--</option>
+                </select>
             <!-- <h1 class="m-0 text-dark">Pilih Kolam</h1> -->
           </div><!-- /.col -->
           <div class="col-sm-6">
@@ -98,7 +111,7 @@
         <div class="row">
           <!-- Left col -->
           <section class="col-lg-12 connectedSortable">
-              <canvas id="chartph" ></canvas>
+              <canvas id="chartph"></canvas>
             <!-- section -->
           </section>
           <!-- /.Left col -->
