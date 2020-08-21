@@ -9,7 +9,7 @@
               <option selected disabled>Pilih Kolam</option>
               <?php foreach ($select as $slt) { ?>
                 <option>
-                  <?php echo $slt->id; ?>
+                 Kolam <?php echo $slt->id; ?>
                 </option>  
 
                 <?php
