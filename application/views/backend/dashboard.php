@@ -4,18 +4,18 @@
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
-            <select class="form-control" name="kolam">
+          <div class="col-sm-6 d-flex justify-content-center">
+            <select class="form-control " name="kolam">
               <option selected disabled>Pilih Kolam</option>
               <?php foreach ($select as $slt) { ?>
-                <option>
-                 Kolam <?php echo $slt->id_kolam; ?>
+                <option value="<?php echo $slt['id'] ?>">
+                 <?php echo $slt['nama_kolam']; ?>
                 </option>  
-
                 <?php
               }
                 ?>
             </select>
+            <button class="btn btn-primary">Filter</button>
             <!-- <h1 class="m-0 text-dark">Pilih Kolam</h1> -->
           </div><!-- /.col -->
           <div class="col-sm-6">
