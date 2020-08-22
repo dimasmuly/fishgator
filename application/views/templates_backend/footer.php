@@ -85,20 +85,23 @@
         data : {id : id},
         async : false,
         dataType : 'json',
-          success : function(data){
-            var html = '';
-            var i;
-            
-            for (i = 0;  i < data.length; i++) {
-              html += '<option>'+data[i].suhu+'</option>';
-              html += '<option>'+data[i].ph+'</option>';
-              html += '<option>'+data[i].turbidity+'</option>';
-              html += '<option>'+data[i].oxigen+'</option>';
+          success : function(response){
+            var len = response.length;
+            $('#dsuhu,#dph,#dox,#dtubidity').text('');
+
+            if (len > 0) {
+              // read Values
+
+              var usuhu = response[0].suhu;
+              var uph = response[0].ph;
+              var uturbidity = response[0].turbidity;
+              var uox = response[0].oxigen;
+
+              $('#dsuhu').text(usuhu);
+              $('#dph').text(uph);
+              $('#dtubidity').text(uturbidity);
+              $('#dox').text(uox);
             }
-            $('.suhu').html(html);
-            $('.ph').html(html);
-            $('.turbidity').html(html);
-            $('.oxigen').html(html);
           }
       })
     });

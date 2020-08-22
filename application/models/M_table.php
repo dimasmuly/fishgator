@@ -26,7 +26,7 @@ class M_table extends CI_Model
 
 	public function getKolom($id)
 	{
-		$hasil = $this->db->query("SELECT * FROM tbl_kolam WHERE id_nama_kolam= '$id'");
+		$hasil = $this->db->query("SELECT * FROM tbl_kolam WHERE id_nama_kolam= '$id' ORDER BY id DESC");
 		return $hasil->result();
 	}
 
