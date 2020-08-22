@@ -87,6 +87,7 @@
         dataType : 'json',
           success : function(response){
             var len = response.length;
+
             $('#dsuhu,#dph,#dox,#dtubidity').text('');
 
             if (len > 0) {
@@ -102,12 +103,24 @@
               $('#dtubidity').text(uturbidity);
               $('#dox').text(uox);
             }
-          }
-      })
-    });
+
+            // chartjs
+            var label = [];
+            var ph = [];
+            var suhu = [];
+            var oxigen = [];
+            var turbidity = [];
+
+            for (var i in response){
+              label.push(response[i].tanggal);
+              ph.push(response[i].ph);
+              suhu.push(response[i].suhu);
+              oxigen.push(response[i].oxigen);
+              turbidity.push(response[i].turbidity);
+            }
+            // /chartjs
 
    // chartjs
-    // PH
     var ctx = document.getElementById('chartph').getContext('2d');
     var chart = new Chart(ctx, {
     // The type of chart we want to create
@@ -115,19 +128,21 @@
 
     // The data for our dataset
     data: {
-        labels: [ 
-          <?php foreach($ph as $p) :?>
-           <?php echo date_format(date_create($p->tanggal),'d-m-Y');?>,
-          <?php endforeach; ?>
-        ],
+        labels: label,
+        // [ 
+        //   <?php foreach($ph as $p) :?>
+        //    <?php echo date_format(date_create($p->tanggal),'d-m-Y');?>,
+        //   <?php endforeach; ?>
+        // ],
         datasets: [
           {
             label: 'Statk PH',
-            data: [
-              <?php foreach($ph as $p) :?>
-                <?php echo $p->ph;?>,
-              <?php endforeach; ?>
-            ],
+            data: ph,
+            // [
+            //   <?php foreach($ph as $p) :?>
+            //     <?php echo $p->ph;?>,
+            //   <?php endforeach; ?>
+            // ],
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
             lineTension : 0,
@@ -135,11 +150,12 @@
             fill : false,
           },{
             label: 'Statk Oxigen',
-            data: [
-              <?php foreach($oxigen as $ox) :?>
-                <?php echo $ox->oxigen;?>,
-              <?php endforeach; ?>
-            ],
+            data: oxigen,
+            // [
+            //   <?php foreach($oxigen as $ox) :?>
+            //     <?php echo $ox->oxigen;?>,
+            //   <?php endforeach; ?>
+            // ],
             backgroundColor: '#36a2eb',
             borderColor: '#36a2eb',
             lineTension : 0,
@@ -147,11 +163,12 @@
             fill : false,
           },{
             label: 'Statk turbidity',
-            data: [
-              <?php foreach($turbidity as $tb) :?>
-                <?php echo $tb->turbidity;?>,
-              <?php endforeach; ?>
-            ],
+            data:  turbidity,
+            // [
+            //   <?php foreach($turbidity as $tb) :?>
+            //     <?php echo $tb->turbidity;?>,
+            //   <?php endforeach; ?>
+            // ],
             backgroundColor: '#ffcd56',
             borderColor: '#ffcd56',
             lineTension : 0,
@@ -159,11 +176,12 @@
             fill : false,
           },{
             label: 'Statk Suhu',
-            data: [
-              <?php foreach($suhu as $sh) :?>
-                <?php echo $sh->suhu;?>,
-              <?php endforeach; ?>
-            ],
+            data: suhu,
+            // [
+            //   <?php foreach($suhu as $sh) :?>
+            //     <?php echo $sh->suhu;?>,
+            //   <?php endforeach; ?>
+            // ],
             backgroundColor: '#4bc0c0',
             borderColor: '#4bc0c0',
             lineTension : 0,
@@ -176,6 +194,10 @@
     // Configuration options go here
     options: {}
 });
+
+          }
+      })
+    });
 
     // /function
   });  
