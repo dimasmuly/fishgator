@@ -77,7 +77,6 @@
 
 <script>
   $(function () {
-
     $('#kolom').change(function(){
       var id = $(this).val();
       $.ajax({

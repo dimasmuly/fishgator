@@ -16,7 +16,8 @@ class M_table extends CI_Model
 	}
 	public function relasi()
 	{
-		$this->db->select('*');
+		$this->db->distinct();
+		$this->db->select('id_nama_kolam,nama_kolam');
 		$this->db->from('tbl_kolam');
 		$this->db->join('tbl_nama_kolam', 'tbl_nama_kolam.id = tbl_kolam.id_nama_kolam');
 		$query = $this->db->get()->result_array();
