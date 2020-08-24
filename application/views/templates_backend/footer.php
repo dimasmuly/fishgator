@@ -199,6 +199,83 @@
       })
     });
 
+
+    // data all chart
+
+    var ctx = document.getElementById('dchart').getContext('2d');
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: 
+        [ 
+          <?php foreach($ph as $p) :?>
+           <?php echo date_format(date_create($p->tanggal),'d-m-Y');?>,
+          <?php endforeach; ?>
+        ],
+        datasets: [
+          {
+            label: 'Statk PH',
+            data: 
+            [
+              <?php foreach($ph as $p) :?>
+                <?php echo $p->ph;?>,
+              <?php endforeach; ?>
+            ],
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            lineTension : 0,
+            pointRadius : 5,
+            fill : false,
+          },{
+            label: 'Statk Oxigen',
+            data: 
+            [
+              <?php foreach($oxigen as $ox) :?>
+                <?php echo $ox->oxigen;?>,
+              <?php endforeach; ?>
+            ],
+            backgroundColor: '#36a2eb',
+            borderColor: '#36a2eb',
+            lineTension : 0,
+            pointRadius : 5,
+            fill : false,
+          },{
+            label: 'Statk turbidity',
+            data:  
+            [
+              <?php foreach($turbidity as $tb) :?>
+                <?php echo $tb->turbidity;?>,
+              <?php endforeach; ?>
+            ],
+            backgroundColor: '#ffcd56',
+            borderColor: '#ffcd56',
+            lineTension : 0,
+            pointRadius : 5,
+            fill : false,
+          },{
+            label: 'Statk Suhu',
+            data: 
+            [
+              <?php foreach($suhu as $sh) :?>
+                <?php echo $sh->suhu;?>,
+              <?php endforeach; ?>
+            ],
+            backgroundColor: '#4bc0c0',
+            borderColor: '#4bc0c0',
+            lineTension : 0,
+            pointRadius : 5,
+            fill : false,
+          }
+        ]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
     // /function
   });  
 </script>

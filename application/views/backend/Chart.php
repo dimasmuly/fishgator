@@ -26,7 +26,7 @@
           <!-- Left col -->
           <section class="col-md-6">
             <div class="">
-              <canvas id="chartph" width="100" height="100"></canvas>
+              <canvas id="dchart" width="100" height="100"></canvas>
             </div>
           </section>
           <!-- /.Left col -->
