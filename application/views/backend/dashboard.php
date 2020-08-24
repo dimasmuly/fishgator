@@ -68,7 +68,6 @@
             <div class="small-box bg-warning">
               <div class="inner">
                 <h3><span id="dtubidity"><?php echo $last_data->turbidity ?></span></h3>
-
                 <p>Turbidity</p>
               </div>
               <div class="icon">
