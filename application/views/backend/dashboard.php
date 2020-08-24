@@ -4,18 +4,18 @@
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
-            <select class="form-control" name="kolam">
-              <option selected disabled>Pilih Kolam</option>
-              <?php foreach ($select as $slt) { ?>
-                <option>
-                 Kolam <?php echo $slt->id_kolam; ?>
-                </option>  
+          <div class="col-sm-6 ">
+              <select class="form-control" name="kolam" id="kolom">
+                <option selected disabled>Pilih Kolam</option>
+                <?php foreach ($select as $slt) { ?>
+                  <option value="<?php echo $slt['id_nama_kolam'] ?>">
+                  <?php echo $slt['nama_kolam']; ?>
+                  </option>  
+                  <?php
+                }
+                  ?>
+              </select>
 
-                <?php
-              }
-                ?>
-            </select>
             <!-- <h1 class="m-0 text-dark">Pilih Kolam</h1> -->
           </div><!-- /.col -->
           <div class="col-sm-6">
@@ -39,7 +39,7 @@
             
             <div class="small-box bg-info">
               <div class="inner">
-                <h3><?php echo $last_data->ph ?></h3>
+                <h3><span id="dph"><?php echo $last_data->ph ?></span></h3>
 
                 <p>pH</p>
               </div>
@@ -53,7 +53,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3><?php echo $last_data->oxigen ?><sup style="font-size: 20px"></sup></h3>
+                <h3><span id="dox"><?php echo $last_data->oxigen ?><sup style="font-size: 20px"></span></h3>
 
                 <p>DO (ppm)</p>
               </div>
@@ -68,6 +68,7 @@
             <div class="small-box bg-warning">
               <div class="inner">
                 <h3><?php echo $last_data->turbidity ?></h3>
+                <h3><span id="dtubidity"><?php echo $last_data->turbidity ?></span></h3>
                 <p>Turbidity</p>
               </div>
               <div class="icon">
@@ -80,7 +81,7 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3><?php echo $last_data->suhu ?></h3>
+                <h3><span id="dsuhu"><?php echo $last_data->suhu ?></span></h3>
 
                 <p>Temperature</p>
               </div>
@@ -97,7 +98,7 @@
         <div class="row">
           <!-- Left col -->
           <section class="col-lg-12 connectedSortable">
-              <canvas id="chartph" ></canvas>
+              <canvas id="chartph" class="chartkolom"></canvas>
             <!-- section -->
           </section>
           <!-- /.Left col -->

@@ -13,7 +13,8 @@ class Dashboard extends CI_Controller {
 	public function index()
 	{
 
-		$data['select'] = $this->db->get('tbl_kolam')->result();
+		$data['select'] = $this->M_table->relasi();
+		// print_r($data['select']);exit;
 		$data['last_data'] = $this->M_table->getLastQuery()->row();
 		
 		// chart
@@ -29,8 +30,11 @@ class Dashboard extends CI_Controller {
 		$this->load->view('backend/dashboard',$data);
 		$this->load->view('templates_backend/footer');
 	}
-	public function view_data()
+
+	public function get_kolom()
 	{
-		
+		$id = $this->input->post('id');
+		$data = $this->M_table->getKolom($id);
+		echo json_encode($data);
 	}
 }
