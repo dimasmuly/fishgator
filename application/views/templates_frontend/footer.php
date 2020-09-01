@@ -16,7 +16,7 @@
     </section>
     <section id="services">
       <div class="sectiontitle">
-        <h5 class="heading">Mision</h5>
+        <h5 class="heading">Mission</h5>
          <p>Berkreativitas dan Berinovasi  untuk mengenali teknologi lebih kompleks dengan  terus mengasah kreatifitas, imajinasi dan mengembangkan logika berpikir demi kehidupan yang lebih baik.
          </p>
       </div>

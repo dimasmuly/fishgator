@@ -34,21 +34,21 @@ Licence URI: https://www.os-templates.com/template-terms
       <!-- ################################################################################################ -->
       <ul class="clear">
         <li class="active"><a href="#"><h1>Home</h1></a></li>
-        <li><a href="<?php echo site_url('Artikel')?>"><h1>Artikel</h1></a></li>
-        <li><a href="<?php echo site_url('News')?>"><h1>News</h1></a></li>
-        <li><a class="drop" href="#"><h1>Project Kami</h1></a>
-          <ul>
-            <li><a href="<?php echo site_url('project_kami/kolam_bioflog')?>"><h1>Kolam BioFlog</h1></a></li>
-            <li><a href="<?php echo site_url('project_kami/kolam_tambak')?>"><h1>Kolam Tambak</h1></a></li>
-            <li><a href="<?php echo site_url('project_kami/hatchery')?>"><h1>Hatchery</h1></a></li>
-          </ul>
-        </li>
-        <li><a class="drop" href="#"><h1>Tentang Kami</h1></a>
+        <li><a class="drop" href="#"><h1>About Us</h1></a>
         <ul>
-            <li><a href="<?php echo site_url('tentang_kami/visi_misi')?>"><h1>Visi & Misi</h1></a></li>
+            <li><a href="<?php echo site_url('tentang_kami/visi_misi')?>"><h1>Vision & Mission</h1></a></li>
             <li><a href="<?php echo site_url('tentang_kami/profile_perusahaan')?>"><h1>Profile Perusahaan</h1></a></li>
             <li><a href="<?php echo site_url('tentang_kami/contact_us')?>"><h1>Contact Us</h1></a></li>
           </ul>
+          <li><a  class="drop" href="<?php echo site_url('Products')?>"><h1>Products</h1></a>
+          <ul>
+            <li><a href="<?php echo site_url('project_kami/fishgator_tech')?>"><h1>FishGator Tech</h1></a></li>
+            <li><a href="<?php echo site_url('project_kami/fishgator_fresh')?>"><h1>FishGator Fresh</h1></a></li>
+            <li><a href="<?php echo site_url('project_kami/fishgator_media')?>"><h1>FishGator Media</h1></a></li>
+        </li>
+        </ul>
+        <li><a href="<?php echo site_url('Artikel')?>"><h1>Articles</h1></a></li>
+        <li><a href="<?php echo site_url('News')?>"><h1>News</h1></a></li>
           <li><a href="<?php echo site_url('auth/login')?>"><h1>Login</h1></a></li>
         </li>
       </ul>

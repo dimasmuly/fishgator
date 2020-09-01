@@ -1,8 +1,9 @@
   <div id="pageintro" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <article>
-      <h3 class="heading">Hatchery</h3>
-      <p>FishGator merupakan platform financial teknologi peer to peer lending yang mengintegrasikan Internet of Things (IoT) yang terintegrasi dengan decesison support system berbasis Artificial Intellegence pada sistem management budidaya perikanan  sehingga berdampak pada potensi hasil panen yang maksimal.
+      <h3 class="heading">FishGator Tech</h3>
+      <p>
+      FishGator Tech Merupakan Fitur Produk Teknologi Yang Mengintegrasikan Internet Of Things (IoT) Yang Terintegrasi Dengan Decision Support System Berbasis Artificial Intelligence Pada Sistem Manajemen Budidaya Perikanan Sehingga Berdampak Pada Efisiensi Penggunaan Dana Operasional dan Potensi Hasil Panen Yang Maksimal.
       </p>
       <footer>
       </footer>
@@ -42,16 +43,40 @@
   <main class="hoc container clear"> 
     <!-- main body -->
     <!-- ################################################################################################ -->
-   <div class="content"> 
-      <!-- ################################################################################################ -->
 
-      <h1>Hatchery</h1>
-      <img src="<?php echo base_url()?>assets/frontend/demo/backgrounds/f18.jpg">
-      <p>
-        Hactchery adalah tempat ikan menetas. Arti lainnya dari hatchery adalah tempat penetasan.
-        Hatchery masuk ke dalam bahasa inggris yaitu bahasa jermanik yang pertama kali dituturkan di inggris pada Abad Pertengahan awal dan saat ini merupakan bahasa yang paling umum digunakan di seluruh dunia.
-     </p>
-    
+      <!-- ################################################################################################ -->
+      <div class="content three_quarter first"> 
+      <!-- ################################################################################################ -->
+      <h1>1. Automatic Feeder</h1>
+      <img class="imgr borderedbox inspace-5" alt="" src="<?php echo base_url()?>assets/frontend/demo/backgrounds/fitur1.png">
+      <p>Automatc Feeder merupakan sistem pemberipakan otomatis, sistem
+Automatic Feeder pada FishGator juga mendukung sistem manajemen
+pakan sehingga berdampak pada efek tifitas dan efisien si pemberian pakan
+yang berdampak pada tertekannya biaya operasional.</p>
+      <p>Sistem manajemen pakan pada FishGator terin tegrasi dengan platform Internet of Things (IoT)
+sehingga dapat di pantau menggunakan web services dan android
+smartphone</a> Auto matic Feeder FishGator memiliki kapasitas hingga 100 Kg
+Pakan (Ukuran box penampung pakan dapat di sesuaikan permintaan).</p>
+     
+<h1>2. Automatic Aeroation</h1>
+      <img class="imgl borderedbox inspace-5" alt="" src="<?php echo base_url()?>assets/frontend/demo/backgrounds/fitur3.png">
+      <p>Automatic aeration merupakan sistem aerasi yang berfungsi sebagai
+sistem kontrol oksigen terlarut pada kolam atau tambak.<p>Pada Sistem
+FishGator sistem ini juga berfungsi sebagai sistem automatic treatment.
+Sistemaerasi pada FishGator terdiri dari sistemmic robubble dan
+nanobubble yang bisanya di aplikasikan pada kolam bioflog dan atau kolam
+Tong atau fiber indoor system (untuk tambak udang biasanya tetap
+menggunakan kincir air).</p>
+<h1>3. Monitoring Water Sensor</h1>
+      <img class="imgr borderedbox inspace-5" alt="" src="<?php echo base_url()?>assets/frontend/demo/backgrounds/fitur2.png">
+      <p>Water Monitoring System merupakan sistem monitor parameter kualitas air untuk mengetahui apakah air kolam dalam keadaan baik atau buruk. Pada sistem water monitoring pada 
+      Fishgator menggunakan beberapa parameter sensor antara lain, sensor suhu air, sensor Ph air, sensor Dissolve Oxygen (DO), sensor turbidity (kekeruhan, biasanya pada kolam air tawar) dan sensor salinitas (biasanya pada kolam payau atau asin).
+      Sistem Water Monitoring Sensor pada FishGator telah terintegrasi dengan platform Internet of Things (IoT) sehingga dapat dipantau menggunakan Web Services dan Android Smartphone secara realtime</p>      
+<h1>4. Big Data Analysis System</h1>
+      <img class="imgl borderedbox inspace-5" alt="" src="<?php echo base_url()?>assets/frontend/demo/backgrounds/fitur4.png">
+      <p>Fitur Big Data Analysis FishGator merupakan suatu sistem analis untuk membuat keputusan budidaya lebih cepat yang terintegrasi dengan platform IoT monitor kualitas air<p>Pada Sistem
+      Sehingga dapat dengan mudah merekam dan menganalisa data kualitas air melalui aplikasi web. Internet of Things (IoT) dan analisis Big Data untuk pengambilan keputusan yang tepat dan akurat.</p>
+     
     <!-- ################################################################################################ -->
     <!-- / main body -->
     <div class="clear"></div>
@@ -64,56 +89,8 @@
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row2">
-  </section>
-</div>
-<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/logo.jpg');">
-  <section class="hoc container clear"> 
-    <!-- ################################################################################################ -->
-    <div class="sectiontitle">
-      <h6 class="heading">Berikut Cara Kerja Hatchery :</h6>
-    </div>
-    <article id="points" class="group">
-      <div class="two_third first">
-        <h6 class="heading">Work System Hatchery</h6>
-        <ul class="nospace group">
-          <li><span>1</span><h5> Penerimaan Telur (Receiving Egg)</h5>
-          Suatu proseskerja di hatchery untuk  menerima telur dari breeding farm ke hatchery. Pada saat telur datang, langsung di terima oleh operator hatchery, dihitung jumlah telur, pemeriksaan fisik, dan asal flock / kandang.
-          </li>
-          <li><span>2</span><h5>Grading Egg </h5>
-            Suatu proseskerja di hatchery dalam menyeleksi atau pemilihan telur HE (Hatching Egg) sesuai dengan standar HE yang baik.
-            Untuk mengklasifikasikan antara HE dan non HE.
-         </li>
-          <li><span>3</span><h5> Fumigasi(Pengasapan)</h5>
-            Suatu proses kerja di Hatchery untuk pengasapan telur yang bertujuan untuk mengurangi membunuh bakteri, virus, fungi, dan sebagainya pada kerabang luar HE.
-            Untuk mengurangi kontaminasi pada HE. 
-          </li>
-          <li><span>4</span><h5> Egg Storage (Penyimpanan Telur)</h5>
-           Suatu proses kerja di hatchery menyimpan telur ketika HE tidak langsung di setting atau di masukan pada setter. Biasanya di tempatkan di cooling room dengan suhu:
 
-           1 - 3 hari          : 18-20oC         RH      : 75%
-           4 - 7 hari          : 16-17oC         RH      : 80%
-           8 - 11 hari        :13 - 15oC       RH      : 88% 
-           12 hari          : 10 – 12oC      RH      : 88%
 
-           Pre-Warming / Pre-Heating.
-
-           Pre-warming / Pre-Heating adalah suatu proses kerja di hatchery sebagai masa transisi HE dari Cooling Room menuju Setter sebelum di setting.
-
-           Supaya menghindari shock temperature pada embrio.
-           Menghomogenkan / menyamaratakan suhu HE.
-
-           Waktu pre warming 8-12 jam dengan Temperature 24-26oC, dan Relatives Humidity yaitu 60%.
- 
-          </li>
-        </ul>
-      </div>
-      <br><div class="one_third last"><a class="imgover" href="#"><br><img src="<?php echo base_url()?>assets/frontend/demo/backgrounds/f18.jpg" alt=""></a></div></br></br>
-      <br><div class="one_third last"><a class="imgover" href="#"><br><br><br><img src="<?php echo base_url()?>assets/frontend/demo/backgrounds/f19.jpg" alt=""></a></div></br></br></br>
-    </article>
-    <!-- ################################################################################################ -->
-  </section>
-</div>
 <section id="services">
       <div class="sectiontitle">
         <br>
