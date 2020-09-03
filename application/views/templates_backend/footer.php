@@ -212,7 +212,7 @@
         labels: 
         [ 
           <?php foreach($ph as $p) :?>
-           <?php echo date_format(date_create($p->tanggal),'d-m-Y');?>,
+           ,<?php echo date_format(date_create($p->tanggal),'d-m-Y');?>,
           <?php endforeach; ?>
         ],
         datasets: [
@@ -221,7 +221,7 @@
             data: 
             [
               <?php foreach($ph as $p) :?>
-                <?php echo $p->ph;?>,
+                ,<?php echo $p->ph;?>,
               <?php endforeach; ?>
             ],
             backgroundColor: 'rgb(255, 99, 132)',
@@ -234,7 +234,7 @@
             data: 
             [
               <?php foreach($oxigen as $ox) :?>
-                <?php echo $ox->oxigen;?>,
+                ,<?php echo $ox->oxigen;?>,
               <?php endforeach; ?>
             ],
             backgroundColor: '#36a2eb',
@@ -247,7 +247,7 @@
             data:  
             [
               <?php foreach($turbidity as $tb) :?>
-                <?php echo $tb->turbidity;?>,
+                ,<?php echo $tb->turbidity;?>,
               <?php endforeach; ?>
             ],
             backgroundColor: '#ffcd56',
@@ -260,7 +260,7 @@
             data: 
             [
               <?php foreach($suhu as $sh) :?>
-                <?php echo $sh->suhu;?>,
+                ,<?php echo $sh->suhu;?>,
               <?php endforeach; ?>
             ],
             backgroundColor: '#4bc0c0',

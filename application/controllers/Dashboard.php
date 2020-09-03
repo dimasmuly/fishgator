@@ -37,4 +37,5 @@ class Dashboard extends CI_Controller {
 		$data = $this->M_table->getKolom($id);
 		echo json_encode($data);
 	}
+
 }

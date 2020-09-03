@@ -20,17 +20,17 @@
   <section id="ctdetails" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <ul class="nospace clear">
-      <li class="one_quarter first">
-        <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Give us a call:</strong> +62 811-3399-197</span></div>
+    <li class="one_quarter first">
+        <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>(+62) 811-3399-197</strong>gainztech@gmail.com</span></div>
       </li>
       <li class="one_quarter">
-        <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Send us a mail:</strong> customer@gainztech.my.id</span></div>
+        <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Mon. - Fri. :</strong> 8 AM - 4 PM</span></div>
       </li>
       <li class="one_quarter">
-        <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Mon. - Fri. :</strong> 08.00am - 16.00pm</span></div>
+        <div class="block clear"><a href="#"><i class="fas fa-map-marker-alt"></i></a> <span><strong>Marketing Office :</strong> Jl. Keputih 3C No. 59 C, Surabaya (60111)</span></div>
       </li>
       <li class="one_quarter">
-        <div class="block clear"><a href="#"><i class="fas fa-map-marker-alt"></i></a> <span><strong>Come visit us:</strong>  Jl. Kawah Ijen, Gardu Otak, Jurang Sapi, Tapen, Kabupaten Bondowoso, Jawa Timur 68283</span></div>
+        <div class="block clear"><a href="#"><i class="fas fa-map-marker-alt"></i></a> <span><strong>Production Office :</strong> Jl. Kawah Ijen Garduatak, Bondowoso (68283)</span></div>
       </li>
     </ul>
     <!-- ################################################################################################ -->
